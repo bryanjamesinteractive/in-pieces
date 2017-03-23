@@ -25,10 +25,21 @@ module.exports = function(grunt) {
           ]
       }
     },
+    cssmin: { // Begin CSS Minify Plugin
+        target: {
+            files: [{
+                expand: true,
+                cwd: 'css',
+                src: ['*.css', '!*.min.css'],
+                dest: 'css',
+                ext: '.min.css'
+            }]
+        }
+    },
     watch: {
       css: {
           files: '**/*.scss',
-          tasks: ['sass', 'postcss'],
+          tasks: ['sass', 'postcss', 'cssmin'],
           options: {
               livereload: true,
           },
