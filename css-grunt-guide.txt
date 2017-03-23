@@ -1,0 +1,39 @@
+// CSS
+sass: { // Begin Sass Plugin
+    dev: {
+        options: {
+            sourcemap: 'none'
+        },
+        files: [{
+            expand: true,
+            cwd: '<%= paths.dev %>/scss',
+            src: ['**/*.scss'],
+            dest: '<%= paths.dev %>/css',
+            ext: '.css'
+        }]
+    }
+},
+postcss: { // Begin Post CSS Plugin
+    options: {
+        map: false,
+        processors: [
+            require('autoprefixer')({
+                browsers: ['last 2 versions', 'ie >= 9']
+            })
+        ]
+    },
+    dist: {
+        src: '<%= paths.dev %>/css/*.css'
+    }
+},
+cssmin: { // Begin CSS Minify Plugin
+    target: {
+        files: [{
+            expand: true,
+            cwd: '<%= paths.dev %>/css',
+            src: ['*.css', '!*.min.css'],
+            dest: '<%= paths.dist %>/css',
+            ext: '.min.css'
+        }]
+    }
+}

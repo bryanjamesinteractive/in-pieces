@@ -5,9 +5,24 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "autoprefixer": "latest",
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+    "grunt": "~0.4.5",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-modernizr": "^1.0.2",
+    "grunt-postcss": "latest",
+    "grunt-processhtml": "^0.4.1",
+    "grunt-svgmin": "^4.0.0",
+    "load-grunt-tasks": "^3.5.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
