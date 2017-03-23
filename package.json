@@ -1,0 +1,25 @@
+{
+  "name": "in-pieces",
+  "version": "1.0.0",
+  "description": "In Pieces project, 30 endangered species.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanjamesinteractive/in-pieces.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryanjamesinteractive/in-pieces/issues"
+  },
+  "homepage": "https://github.com/bryanjamesinteractive/in-pieces#readme"
+}
